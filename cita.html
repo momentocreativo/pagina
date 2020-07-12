@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cita</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_log.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos_perfil.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-cont">
+
+                <input type='checkbox' id='btn-menu1'>
+                <label class='icon-list' for='btn-menu1' onclick='ocultarOpcion();'></label>
+                <img class='img_logop' src="/imagenes/LogoLargo.png">
+
+                <input type='checkbox' id='btn-Usu'>
+                <label class='icon-user' href='javascript:void(0);' for='btn-Usu' onclick='ocultarMenu();'></label>
+
+
+                <ul class="menu" id="menu">
+                    <a href="#" title="Simoniz">
+                        <img class="img_logo" src="/imagenes/LogoLargo.png" alt="Simoniz"></a>
+
+                    <li class="menu__item"><a href="/index.html" class="menu__item menu__link">Inicio</a></li>
+
+                    <li class="menu__item submenu"><a href="Inicio.html" class="menu__link menu_li_a">Clases<span
+                                class="icon-chevron-down"></span></a>
+                    </li>
+                    <li class="menu__item submenu">
+                        <a href="/cita.html" class="menu__link menu_li_a">Profesor</a></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </header> 
+
+    <section>
+        <div class="container">
+            <div class="cont-submenu">
+                <form class="form-busq" action="">
+                    <div class="mas-busc">
+                        <p>Busca Tu Clase Aquí...</p>
+                    </div>
+                    <p class="title-menu-s">Que Quieres Aprender?</p>
+                    <div>
+                        <input class="input-97" type="text" placeholder='Buscar..'>
+                        <button class="buscador" type='submit'><span class='icon-search'></span></button>
+                    </div>
+                    <div>
+                        <span>¿Donde?</span>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Online</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Hogar</label>
+                    </div>
+
+                    <h5>Nivel de Clases:</h5>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Iniciación</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Bajo</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Medio</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Alto</label>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="cont-clases shadow p-3 mb-5 bg-white rounded">
+                <div class="d-flex w-100 justify-content-between title-perfil">
+                    <p>Clases Online</p>
+                    <span class="icon-map-marker"></span>
+                </div>
+                <div class="cont-perfil-class">
+                    <div class="d-flex justify-content-between cont-c-img">
+                        <img src="/imagenes/perfiles/Andres-6773_-500x500.jpg" alt="">
+
+                    </div>
+                    <div class="d-flex justify-content-between cont-c-info">
+                        <p class="mb-1">Nombre: Pedro Perez</p>
+
+                    </div>
+
+                    <div class="d-flex cont-c-info justify-content-between">
+
+                        <p class="mb-1">Area de Curso: Programación</p>
+                    </div>
+
+                    <div class="d-flex cont-c-info justify-content-between ">
+                        <p class="mb-1">Grado Academico: Ingeniero de Sistemas.</p>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <p class="mb-1 intro-p"><b>Perfíl: </b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iste explicabo molestiae quae animi veritatis, dignissimos laboriosam consectetur sit neque nostrum, mollitia eligendi fuga temporibus deleniti iusto. Voluptates culpa, tenetur.</p>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <p class="mb-1 intro-p"><b>Para Alumnos: </b> Universidad y Tecnico.</p>
+                    </div>
+
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <p class="mb-1 intro-p"><b>Metodo: </b> On-line.</p>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <p class="mb-1 intro-p"><b>Precio: </b> 10$</p>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between ">
+                        <p class="mb-1 intro-p">
+                            <span class="icon-clock-o"></span>
+                            <b>Disponibilidad horaria de Pedro Perez: </b></p>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between">
+                        <img src="/imagenes/perfiles/horario.png" alt="">
+                    </div>
+                    <div class="d-flex w-100 justify-content-between ">
+
+
+                        <button type="submit" class="btn-enviar" onclick='mostrar();'>Tomar Clase</button>
+
+                        <a href="Inicio.html" class="btn-enviar btn-atras">Atras</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cont-submenu cont-favor">
+                <div class="mas-busc">
+                    <p>Las mas Buscadas...</p>
+                </div>
+                <div>
+                    <a href="" class="link-popular">Limites</a>
+                    <a href="" class="link-popular">Derivadas</a>
+                    <a href="" class="link-popular">Electronica</a>
+                    <a href="" class="link-popular">Circuìtos</a>
+                    <a href="" class="link-popular">Mùsica</a>
+                    <a href="" class="link-popular">Bìologia</a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" id="login" action="" method="post">
+            <div class="imgcontainer">
+                <span id="close-log" class="close" title="Cerrar">&times;</span>
+
+                <img src="/imagenes/PayPal-tarjeta-de-credito.jpg" alt="avatar" class="avatar">
+            </div>
+
+            <div class="container-log">
+
+                <input type="text" placeholder="Usuario o Correo Electronico" name="uname" id="uname" required class="input-100" autocomplete="off" maxlength="30" onkeypress="return validaCorreo(event);">
+                <input type="password" placeholder="Contraseña" name="psw" id="psw" required class="input-100" autocomplete="off" maxlength="60">
+                <div class="d-flex w-100 justify-content-between ">
+                    <a href="sala.html" class="btn-enviar btn-atras">Pagar</a>
+
+                    <button type="button" class="btn-enviar" onclick="cerrar();">Cancelar</button>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <div class="bg-f">
+        <footer class="footer mt-auto py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <span class="col-12 text-center"><a href="index.html">Mentoring</a> | Todo los derechos reservados 2020 ©</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/slider2&Login.js"></script>
+</body>
+
+</html>

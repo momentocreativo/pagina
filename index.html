@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoring | Tu nueva forma de aprendizaje.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_log.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos_perfil.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-cont">
+
+                <input type='checkbox' id='btn-menu1'>
+                <label class='icon-list' for='btn-menu1' onclick='ocultarOpcion();'></label>
+                <img class='img_logop' src="/imagenes/LogoLargo.png">
+
+                <input type='checkbox' id='btn-Usu'>
+                <label class='icon-user' href='javascript:void(0);' for='btn-Usu' onclick='ocultarMenu();'></label>
+
+
+                <ul class="menu" id="menu">
+                    <a href="#" title="Simoniz">
+                        <img class="img_logo" src="/imagenes/LogoLargo.png" alt="Simoniz"></a>
+
+                    <li class="menu__item"><a href="/index.html" class="menu__item menu__link">Inicio</a>
+                    </li>
+
+                    <li class="menu__item submenu"><a href="Inicio.html" class="menu__link menu_li_a">Clases<span
+                                class="icon-chevron-down"></span></a>
+                    </li>
+                    <li class="menu__item submenu">
+                        <a href="/cita.html" class="menu__link menu_li_a">Profesor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid fondo">
+        <div class="container text-center pt-4" style="margin-top: 100px;">
+            <div class="row pt-4 mt-4">
+                <div class="text-white col-4 .ml-auto">
+                    <h1 class="bold">
+                        El Portal de Clases de Venezuela
+                    </h1>
+                </div>
+                <div>
+                    <form action="" cla>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Que quieres aprender?" aria-label="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0"  type="button"><a href="Inicio.html">Buscar</a></button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+
+        <div class="container container--flex">
+            <div class="column column nosotros">
+                <h2 class="column__title">Sobre Nosotros!</h2>
+                <a href="" target="_blank" class="column__link" title="Historia">- Historia, Visión y Misión</a>
+                <a href="" target="_blank" class="column__link" title="Evaluación">- Evaluación</a>
+                <a href="" target="_blank" class="column__link" title="Políticas">- Politicas de Privacidad</a>
+            </div>
+
+            <div class="column column--33">
+                <h2 class="column__title"><a href="javascript:void(0);" onclick="mostrarC();">Contáctanos</a></h2>
+                <p class="column__txt"><span class="icon-map-marker"></span> #22j, Cra. 111 #6699, Bogotá, Colombia</p>
+                <p class="column__txt"><span class="icon-phone"></span> Telefono: 01 900 331 4588.</p>
+                <p class="column__txt">sac@simoniz.com.co</p>
+            </div>
+
+            <div class="column column--33 sociales">
+                <h2 class="column__title"> Síguenos en nuestras redes:<br></h2>
+                
+                <a target=_blank href="https://www.facebook.com/simoniz" title="facebook" class="face"><span class="icon-facebook"></span></a>
+                
+                <a target=_blank href="https://www.Twiter.com/simoniz" title="twitter" class="twit"><span class="icon-twitter"></span>
+                </a>
+                
+                <a target=_blank href="https://www.youtube.com/" title="youtube" class="youtube">
+                    <span class="icon-youtube-play"></span>
+                </a>
+                <a href="https://www.instagram.com/simonizcol/" title="Instagram" target="_blank" class="insta"><span class="icon-instagrem"></span></a>
+            </div>
+
+            <p class="copy">© 2020 Tu Profe│ Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
