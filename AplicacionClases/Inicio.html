@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos_perfil.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-cont">
+
+                <input type='checkbox' id='btn-menu1'>
+                <label class='icon-list' for='btn-menu1' onclick='ocultarOpcion();'></label>
+                <img class='img_logop' src="/imagenes/LogoLargo.png">
+
+                <input type='checkbox' id='btn-Usu'>
+                <label class='icon-user' href='javascript:void(0);' for='btn-Usu' onclick='ocultarMenu();'></label>
+
+
+                <ul class="menu" id="menu">
+                    <a href="#" title="Simoniz">
+                        <img class="img_logo" src="/imagenes/LogoLargo.png" alt="Simoniz"></a>
+
+                    <li class="menu__item"><a href="/index.html" class="menu__item menu__link">Inicio</a></li>
+
+                    <li class="menu__item submenu"><a href="Inicio.html" class="menu__link menu_li_a">Clases<span
+                                class="icon-chevron-down"></span></a>
+                    </li>
+                    <li class="menu__item submenu">
+                        <a href="/cita.html" class="menu__link menu_li_a">Profesor</a></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </header> 
+
+    <section class="mt-10">
+        <div class="container">
+            <div class="cont-submenu">
+                <form class="form-busq" action="">
+                    <div class="mas-busc">
+                        <p>Busca Tu Clase Aquí...</p>
+                    </div>
+                    <p class="title-menu-s">Que Quieres Aprender?</p>
+                    <div>
+                        <input class="input-97" type="text" placeholder='Buscar..'>
+                        <button class="buscador" type='submit'><span class='icon-search'></span></button>
+                    </div>
+                    <div>
+                        <span>¿Donde?</span>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Online</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Hogar</label>
+                    </div>
+
+                    <h5>Nivel de Clases:</h5>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Iniciación</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Bajo</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Medio</label>
+                    </div>
+                    <div class="opc-nivel">
+                        <input type="checkbox"><label>Alto</label>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="cont-clases" >
+                <div class="list-group separador">
+                    <a href="/cita.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between ">
+                            <h5 class="mb-1">Dicto Clases de Programación</h5>
+                            <small>Avanzado</small>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-img">
+                            <img src="/imagenes/perfiles/Andres-6773_-500x500.jpg" alt="">
+
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <p class="mb-1">Programación Orientada a Objetos, Selectores, Funciones, Herencìa, Poliformismo, Evento de ratón.</p>
+                        </div>
+                        <small class="f-clas">Area: Programación</small>
+                        <div class="d-flex justify-content-between cont-c-info">
+
+                            <p class="mb-1"><span class="icon-clock-o"></span><span>7:00 - 8:00 / 16:00- 17:00</span></p>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <div class="refe-star"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-o"></span><span class="icon-star-o"></span></div>
+                            <p class="price">$ Price: 20 $/h</p>
+                        </div>
+
+                    </a></div>
+
+                <div class="list-group separador">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between ">
+                            <h5 class="mb-1">Dicto Clases de Integrales</h5>
+                            <small>Intermedio</small>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-img">
+                            <img src="/imagenes/perfiles/dia-de-la-mujer-monica-moro.png" alt=""></div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <p class="mb-1">Integrales Indefinidas, Integrales Definidas, Integrales por Cambio de Variables, Integrales Polares.</p>
+                        </div>
+                        <small class="f-clas">Area: Matematica</small>
+                        <div class="d-flex justify-content-between cont-c-info">
+
+                            <p class="mb-1"><span class="icon-clock-o"></span><span>8:00 - 9:00 / 10:00- 11:00</span></p>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <div class="refe-star"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-o"></span><span class="icon-star-o"></span></div>
+                            <p class="price">$ Price: 10 $/h</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-group separador">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between ">
+                            <h5 class="mb-1">Clases Funciones</h5>
+                            <small>Iniciación</small>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-img">
+                            <img src="/imagenes/perfiles/descarga.jpg" alt=""></div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <p class="mb-1">Funciones lineales, rango y dominio de funciones.</p>
+                        </div>
+                        <small class="f-clas">Area: Matematica</small>
+                        <div class="d-flex justify-content-between cont-c-info">
+
+                            <p class="mb-1"><span class="icon-clock-o"></span><span class="hora">12:00 - 13:00 / 18:00- 19:00</span></p>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <div class="refe-star"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-o"></span><span class="icon-star-o"></span></div>
+                            <p class="price">$ Price: 10 $/h</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="list-group separador">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between ">
+                            <h5 class="mb-1">Clases de Fisica</h5>
+                            <small>Iniciación</small>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-img">
+                            <img src="/imagenes/perfiles/images%20(1).jpg" alt=""></div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <p class="mb-1">Movimiento Rectilinio Uniforme, Ley de Ohm, Vectores.</p>
+                        </div>
+                        <small class="f-clas">Area: Fisica</small>
+                        <div class="d-flex justify-content-between cont-c-info">
+
+                            <p class="mb-1"><span class="icon-clock-o"></span><span class="hora">12:00 - 13:00 / 18:00- 19:00</span></p>
+                        </div>
+                        <div class="d-flex justify-content-between cont-c-info">
+                            <div class="refe-star"><span class="icon-star-o"></span><span class="icon-star-o"></span><span class="icon-star-o"></span><span class="icon-star-o"></span><span class="icon-star-o"></span></div>
+                            <p class="price">$ Price: 10 $/h</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cont-pag">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                             <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                               <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="cont-submenu cont-favor">
+                <div class="mas-busc">
+                    <p>Las mas Buscadas...</p>
+                </div>
+                <div>
+                    <a href="" class="link-popular">Limites</a>
+                    <a href="" class="link-popular">Derivadas</a>
+                    <a href="" class="link-popular">Electronica</a>
+                    <a href="" class="link-popular">Circuìtos</a>
+                    <a href="" class="link-popular">Mùsica</a>
+                    <a href="" class="link-popular">Bìologia</a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+     <div class="bg-f">
+        <footer class="footer mt-auto py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <span class="col-12 text-center"><a href="index.html">Mentoring</a> | Todo los derechos reservados 2020 ©</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

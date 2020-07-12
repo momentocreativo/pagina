@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_Registro.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos_perfil.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-cont">
+
+                <input type='checkbox' id='btn-menu1'>
+                <label class='icon-list' for='btn-menu1' onclick='ocultarOpcion();'></label>
+                <img class='img_logop' src="/imagenes/LogoLargo.png">
+
+                <input type='checkbox' id='btn-Usu'>
+                <label class='icon-user' href='javascript:void(0);' for='btn-Usu' onclick='ocultarMenu();'></label>
+
+
+                <ul class="menu" id="menu">
+                    <a href="#" title="Simoniz">
+                        <img class="img_logo" src="/imagenes/LogoLargo.png" alt="Simoniz"></a>
+
+                    <li class="menu__item"><a href="/index.html" class="menu__item menu__link">Inicio</a></li>
+
+                    <li class="menu__item submenu"><a href="Inicio.html" class="menu__link menu_li_a">Clases<span
+                                class="icon-chevron-down"></span></a>
+                    </li>
+                    <li class="menu__item submenu">
+                        <a href="/cita.html" class="menu__link menu_li_a">Profesor</a></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>    
+    <div class="modal">
+
+     <form class="modal-content form-reg"  action="" method="post">
+
+        <div class="imgcontainer">
+            <img src="/imagenes/LogoLargo.png" alt="avatar" class="avatar">
+
+        </div>
+        <div class="container-log">
+
+            <input type="text" name="nombreR" id="nombreR" placeholder="Nombre" class="input-48"  required autocomplete="off">
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="input-48"  required autocomplete="off">
+
+            <select name="Ci" class="opc-data" id="tipo-ced" required>
+                <option value="">Tipo Documento</option>
+                <option value="Cédula Ciudadanía">Cédula Ciudadanía</option>
+                <option value="NIT">NIT </option>
+                <option value="Cédula Extranjería">Cédula Extranjería</option>
+            </select>
+            <input type="text" id="numCi" name="numCi" placeholder="Número Documento" class="input-48"  required autocomplete="off">
+
+            <input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="input-48"  required autocomplete="off">
+
+            <input type="text" id="idusuario" name="idusuario" placeholder="Usuario" class="input-48"  required autocomplete="off">
+
+            <input type="text" id="email" name="correo" placeholder="Correo" class="input-97"  required autocomplete="off">
+
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" required autocomplete="off" >
+
+            <input type="password" id="clave-2" name="repe-clave" placeholder="Repetir Contraseña" class="input-48" required autocomplete="off" onkeypress="return validaClave(event);">
+            <div>
+                <label for="select">Paìs: </label>
+                
+            </div>
+            <select name="cbx_estado" id="cbx_estado" required>
+                <option value="0">Seleccione</option>
+                <option value="1">Venezuela</option>
+            </select>
+            <div>
+                <label for="select">Estado: </label>
+                <label class="info-dere" style="float:right; margin-right: 45%;" for="cbx_municipio">Ciudad: </label>
+            </div>
+            <select name="cbx_estado" id="cbx_estado" required>
+                <option value="0">Seleccione</option>
+                <option value="1">Apure</option>
+                <option value="2">Anzoategui</option>
+                <option value="3">Distrito Capital</option>
+                <option value="4">Monagas</option>
+            </select>
+
+            <select name="cbx_municipio" id="cbx_municipio" required autocomplete="off">
+                <option value="0">Seleccione</option>
+                <option value="1">Anaco</option>
+                <option value="2">Barcelona</option>
+                <option value="5">Guanta</option>
+                <option value="3">Lecheria</option>
+                <option value="4">Puerto La Cruz</option>
+            </select>
+
+
+            <div><label for="direccion">Dirección:</label></div>
+            <input type="text" name="direccion" id="direccion" class="input-97 input-txt" required autocomplete="off">
+            <div class="producto img-pro">
+                        <label style="color:white">Imagen:</label>
+                        <div id="prevProd">
+                        <img id="aux-img" src="/imagenes/default-user.png" alt='Portada' class="img_pro">
+                        </div>
+                        <input type="file" name="Imagen" id="imgProd">
+
+                    </div><br>
+            <input type="submit" class="btn-enviar">
+            <input type="checkbox" required autocomplete="off">
+            <label > Acepto los terminos de uso</label>
+            <a href="" target="_blank"> Politicas de Privacidad</a>
+            <p><br>¿Ya tienes una cuenta?<a href="javascript:void(0);" onclick="ocultar();">click aqui</a></p>
+        </div>
+    </form>
+ 
+
+</div>
+    
+     <footer class="main-footer">
+
+        <div class="container container--flex">
+            <div class="column column nosotros">
+                <h2 class="column__title">Sobre Nosotros!</h2>
+                <a href="" target="_blank" class="column__link" title="Historia">- Historia, Visión y Misión</a>
+                <a href="" target="_blank" class="column__link" title="Evaluación">- Evaluación</a>
+                <a href="" target="_blank" class="column__link" title="Políticas">- Politicas de Privacidad</a>
+            </div>
+
+            <div class="column column--33">
+                <h2 class="column__title"><a href="javascript:void(0);" onclick="mostrarC();">Contáctanos</a></h2>
+                <p class="column__txt"><span class="icon-map-marker"></span> #22j, Cra. 111 #6699, Bogotá, Colombia</p>
+                <p class="column__txt"><span class="icon-phone"></span>Telefono: 01 900 331 4588.</p>
+                <p class="column__txt">sac@simoniz.com.co</p>
+            </div>
+
+            <div class="column column--33 sociales">
+                <h2 class="column__title"> Síguenos en nuestras redes:<br></h2>
+                <a target=_blank href="https://www.facebook.com/" title="facebook" class="face"><span class="icon-facebook"></span></a>
+                
+                <a target=_blank href="https://www.Twiter.com/" title="twitter" class="twit"><span class="icon-twitter"></span>
+                </a>
+                
+                <a target=_blank href="https://www.youtube.com/" title="youtube" class="youtube">
+                    <span class="icon-youtube-play"></span>
+                </a>
+                <a href="https://www.instagram.com/" title="Instagram" target="_blank" class="insta"><span class="icon-instagrem"></span></a>
+            </div>
+
+            <p class="copy">© 2020 Tu Profe│ Todos los derechos reservados</p>
+        </div>
+    </footer>
+     <script type="text/javascript">
+        document.getElementById("imgProd").onchange = function(e) {
+            let reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onload = function() {
+                let preview = document.getElementById('prevProd'),
+                    image = document.createElement('img');
+                image.src = reader.result;
+                prevProd.innerHTML = '';
+                prevProd.append(image);
+                $('#aux-img').remove();
+               
+            };
+        }
+
+    </script>
+</body>
+</html>
