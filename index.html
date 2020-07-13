@@ -1,113 +1,137 @@
 <!DOCTYPE html>
-<html lang="ES">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentoring | Tu nueva forma de aprendizaje.</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos_log.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/estilos_perfil.css">
-
+    <title>Electro</title>
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=2.0, minimum-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/estilos_index.css">
 </head>
 
 <body>
-    <header>
-        <nav class="main-nav">
-            <div class="menu-cont">
-
-                <input type='checkbox' id='btn-menu1'>
-                <label class='icon-list' for='btn-menu1' onclick='ocultarOpcion();'></label>
-                <img class='img_logop' src="/imagenes/LogoLargo.png">
-
-                <input type='checkbox' id='btn-Usu'>
-                <label class='icon-user' href='javascript:void(0);' for='btn-Usu' onclick='ocultarMenu();'></label>
-
-
-                <ul class="menu" id="menu">
-                    <a href="#" title="Simoniz">
-                        <img class="img_logo" src="/imagenes/LogoLargo.png" alt="Simoniz"></a>
-
-                    <li class="menu__item"><a href="/index.html" class="menu__item menu__link">Inicio</a>
-                    </li>
-
-                    <li class="menu__item submenu"><a href="Inicio.html" class="menu__link menu_li_a">Clases<span
-                                class="icon-chevron-down"></span></a>
-                    </li>
-                    <li class="menu__item submenu">
-                        <a href="/cita.html" class="menu__link menu_li_a">Profesor</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="container-fluid fondo">
-        <div class="container text-center pt-4" style="margin-top: 100px;">
-            <div class="row pt-4 mt-4">
-                <div class="text-white col-4 .ml-auto">
-                    <h1 class="bold">
-                        El Portal de Clases de Venezuela
-                    </h1>
-                </div>
-                <div>
-                    <form action="" cla>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Que quieres aprender?" aria-label="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0"  type="button"><a href="Inicio.html">Buscar</a></button>
-                      </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="main-footer">
-
+   
+    <header class="main-header">
         <div class="container container--flex">
-            <div class="column column nosotros">
-                <h2 class="column__title">Sobre Nosotros!</h2>
-                <a href="" target="_blank" class="column__link" title="Historia">- Historia, Visión y Misión</a>
-                <a href="" target="_blank" class="column__link" title="Evaluación">- Evaluación</a>
-                <a href="" target="_blank" class="column__link" title="Políticas">- Politicas de Privacidad</a>
+            <div class="logo-contaier column column--50">
+                <h1 class="logo">Tu Profe</h1>
             </div>
-
-            <div class="column column--33">
-                <h2 class="column__title"><a href="javascript:void(0);" onclick="mostrarC();">Contáctanos</a></h2>
-                <p class="column__txt"><span class="icon-map-marker"></span> #22j, Cra. 111 #6699, Bogotá, Colombia</p>
-                <p class="column__txt"><span class="icon-phone"></span> Telefono: 01 900 331 4588.</p>
-                <p class="column__txt">sac@simoniz.com.co</p>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">9999999</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-map-marker">adsasdasdasda-aqui</span>
+                </p>
             </div>
-
-            <div class="column column--33 sociales">
-                <h2 class="column__title"> Síguenos en nuestras redes:<br></h2>
-                
-                <a target=_blank href="https://www.facebook.com/simoniz" title="facebook" class="face"><span class="icon-facebook"></span></a>
-                
-                <a target=_blank href="https://www.Twiter.com/simoniz" title="twitter" class="twit"><span class="icon-twitter"></span>
-                </a>
-                
-                <a target=_blank href="https://www.youtube.com/" title="youtube" class="youtube">
-                    <span class="icon-youtube-play"></span>
-                </a>
-                <a href="https://www.instagram.com/simonizcol/" title="Instagram" target="_blank" class="insta"><span class="icon-instagrem"></span></a>
-            </div>
-
-            <p class="copy">© 2020 Tu Profe│ Todos los derechos reservados</p>
         </div>
-    </footer>
+    </header>
+    <nav class="main-nav top-header">
+        <div class="container container--flex">
+            <span class="icon-list" id="btn-menu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/index.html" class="menu__link menu__link--select ">Inicio</a></li>
+                <li class="menu__item"><a href="/Inicio.html" class="menu__link">Clases</a></li>
+                <li class="menu__item"><a href="/cita.html" class="menu__link">Profesor</a></li>
+                <li class="menu__item"><a href="/registro.html" class="menu__link">Registro</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+  
+   
 
+    <!------------------------- Slider  --------------->
+    <section class="banner">
+        <img src="/imagenes/tecnicas_de_estudio_1582561754461.jpg" alt="" class="banner__img">
+        <div class="banner__content">Mejora tus conocimientos, desde tu hogar</div>
+    </section>
 
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Bienvenido tu Profe Online</h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolor ratione, ab cupiditate ipsum numquam. Voluptate, vitae itaque fugiat nemo neque dolorem quos eius accusamus inventore tempore magni, temporibus id!</p>
+            </div>
+        </section>
+        
+        <section class="group main__about_description">
+            <div class="container container--flex">
+                <div class="column column--50">
+                    <img src="/imagenes/habito+student-girl-studying-at-school-s.jpg" alt="">
+                </div>
+                <div class="column column--50">
+                    <h3 class="column__title">Encuentra los mejores Profesores</h3>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloribus provident, facilis culpa nesciunt iusto? Maiores debitis non facilis quos minus, enim praesentium sapiente voluptate! Quam soluta asperiores nemo, harum.</p>
+                    <a href="/Inicio.html" class="btn btn--contact">Click Aqui</a>
+                </div>
+                 
+            </div>
+        </section>
+        
+        <section class="group today-special">
+            <h2 class="group__title">Las mejores Profesores</h2>
+            <div class="container container--flex">
+                <div class="column column--50-25">
+                    <img src="/imagenes/perfiles/Andres-6773_-500x500.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">
+                       <p>Pedro Perez</p>
+                    </div>
+                    
+                </div>
+                <div class="column column--50-25">
+                    <img src="/imagenes/perfiles/descarga.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">
+                       <p>Dayana mendoza</p>
+                    </div>
+                    
+                </div>
+                <div class="column column--50-25">
+                    <img src="/imagenes/perfiles/dia-de-la-mujer-monica-moro.png" alt="" class="today-special__img">
+                    <div class="today-special__title">
+                       <p>Monica moro</p>
+                    </div>
+                    
+                </div>
+                <div class="column column--50-25">
+                    <img src="/imagenes/perfiles/images%20(1).jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">
+                        <p>juanito</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+    </main>
+    
+     <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column-33">
+                    <h2 class="column__title">por que?</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium amet omnis deleniti minus </p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Contactanos</h2>
+                    <p class="column__txt">dato1</p>
+                    <p class="column__txt">dato2</p>
+                    <p class="column__txt">dato3</p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Siguenos en nuestras redes</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-twitter">Siguenos en twitter</a></p>
+                    <p class="column__txt"><a href="" class="icon-youtube">Visita nuestro canal!</a></p>
+                </div>
+                <p class="copy">copyrgith dasdsa das das</p>
+            </div>
+        </footer>
+        
+<script src="/js/script.js"></script>
 </body>
 
 </html>

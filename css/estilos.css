@@ -436,10 +436,3 @@ height: 30px;
 .modal{
     margin-top: 150px;
 }
-
-.fondo{
-    height: 80vh;
-    background: url(../imagenes/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
