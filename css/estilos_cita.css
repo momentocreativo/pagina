@@ -196,7 +196,14 @@
 }
 
 .title-perfil p {
-    margin-left: 35%;
+    margin-left: 25%;
+}
+.title-perfil span{
+     position: relative;
+    float: right;
+    margin-right: 10px;
+    margin: -20px;
+    
 }
 
 .title-perfil .icon-map-marker {
