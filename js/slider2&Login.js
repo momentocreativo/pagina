@@ -36,7 +36,43 @@ window.onclick = function(event){
 
 $(document).ready(function(){
    
-				
+		$(".btn-cita-libre").click(function(){
+            $.confirm({
+				title: '¿Deseas Registrar esta cita de clase?',
+				content: 'Se Registrara la cita para la fecha : ???',
+				confirmButtonClass: 'btn-enviar',
+    			cancelButtonClass: 'btn-enviar',
+    			confirmButton: 'Confirmar',
+    			cancelButton: 'Cancelar',
+				confirm: function(){
+                    $.post('',{
+                    
+                },function(e){
+                    location.href=" ";
+                        
+            });
+		    }
+		});
+	});
+    
+    $(".btn-cita-ocupada").click(function(){
+            $.confirm({
+				title: 'La Cita se Encuentra ocupada!!',
+				content: 'Ya alguien reservo este dia y hora, sigue intentando',
+				confirmButtonClass: 'btn-enviar',
+    			cancelButtonClass: 'btn-enviar',
+    			confirmButton: 'Confirmar',
+    			cancelButton: 'Cancelar',
+				confirm: function(){
+                    $.post('',{
+                    
+                },function(e){
+                    location.href=" ";
+                        
+            });
+		    }
+		});
+	});
               // close registro
                   $('#close-reg').on('click',function(){
                      document.getElementById('id01').style.display= 'none';
