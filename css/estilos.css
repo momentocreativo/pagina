@@ -240,7 +240,7 @@ body {
     font-weight: bold;
     padding: 4px 8px;
     text-decoration: none;
-    
+
 
 }
 
@@ -270,64 +270,76 @@ body {
 }
 
 
- .cont-video{
-        width: 60%;
-        padding: 20px;
-        border: 2px solid white;
-    }
-    .cont-video img{
-        width: 100%;
-    }
-    
-    
-    .video-cof{
-        width: 90%;
-        margin: auto;
-        border: 2px solid white;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-.opcion-chat{
-    
+.cont-video {
+    width: 60%;
+    padding: 20px;
+    border: 2px solid white;
+}
+
+.cont-video img {
+    width: 100%;
+}
+
+
+.video-cof {
+    width: 90%;
+    margin: auto;
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.opcion-chat {
+
     margin-right: 2%;
     width: 100%;
     height: 40px;
     background: white;
 }
 
-.float-right{
+.float-right {
     margin-right: 2%;
 }
-.icon-logout, .icon-exclamation-circle{
+
+.icon-logout,
+.icon-exclamation-circle {
     font-size: 25px;
     margin-left: 2px;
 }
 
-.icon-logout{
+.icon-logout {
     color: blue;
 }
-.icon-exclamation-circle{
+
+.icon-exclamation-circle {
     color: #ff9900;
 }
-.video-cof a{
+
+.video-cof a {
     text-decoration: none;
 }
-.grabar{
-width: 100%;
-margin-left: 42%;
-height: 30px;
-    
+
+.grabar {
+    width: 100%;
+    margin-left: 42%;
+    height: 30px;
+
 }
-.grabar-link{
+
+.grabar-link {
     text-align: center;
 }
-.icon-video-camera{
+
+.icon-video-camera {
     margin-left: 3px;
     color: red;
     font-size: 20px;
 }
+
 @media screen and (min-width:1024px) {
-    .container ,.video-cof{
+
+    .container,
+    .video-cof {
         width: 1000px;
         margin-top: 10px;
         margin: auto;
@@ -391,53 +403,54 @@ height: 30px;
         background: white;
 
     }
+
     /*-------------------------- Vista Sala de llamada --------------------------*/
-    .cont-video{
+    .cont-video {
         width: 65%;
 
     }
-    .icon-video-camera{
+
+    .icon-video-camera {
         font-size: 32px;
     }
-    .grabar a{
+
+    .grabar a {
         font-size: 18px;
     }
 
-/*-------------------------- RESOLUTION 1600 PX    --------------------------*/
-@media screen and (min-width:1600px) {
-    .container {
-        width: 80%;
+    /*-------------------------- RESOLUTION 1600 PX    --------------------------*/
+    @media screen and (min-width:1600px) {
+        .container {
+            width: 80%;
+        }
     }
-}
 
-.headtable{
-    color: white;
-}
+    .headtable {
+        color: white;
+    }
 
-.verde{
-    background-color: yellowgreen;
+    .verde {
+        background-color: yellowgreen;
 
-}
+    }
 
-.rojo{
-    background-color: red;
+    .rojo {
+        background-color: red;
 
-}
+    }
 
 
-.f-white{
-    font color: #ffffff;
-}
+    .f-white {
+        font color: #ffffff;
+    }
 
-.sociales{
+    .sociales {}
 
-}
+    .modal {
+        margin-top: 150px;
+    }
 
-.modal{
-    margin-top: 150px;
-}
-/* -----------------Estilos Carlos Barra Index */
-
-a:link{
-    text-decoration:none;
-} 
+    /* -----------------Estilos Carlos Barra Index */
+    .nosub {
+        text-decoration: none;
+    }
