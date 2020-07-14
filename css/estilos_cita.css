@@ -370,6 +370,13 @@ height: 30px;
 }
 
 /*--------------------------------------------TABLAS de Historia ------------------ */
+#horario-Agosto{
+    display: none;
+}
+
+.btn-ff{
+ padding: 5px;   
+}
 
 table{
   width:98%;
