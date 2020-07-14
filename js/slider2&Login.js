@@ -101,3 +101,14 @@ function mostrar() {
  function cerrar() {
             document.getElementById('id01').style.display = "none";
         }
+
+        function alante() {
+            document.getElementById('horario-julio').style.display = "none";
+            document.getElementById('horario-Agosto').style.display = "block";
+            
+        }
+        function atras() {
+            document.getElementById('horario-Agosto').style.display = "none";
+            document.getElementById('horario-julio').style.display = "block";
+            
+        }
