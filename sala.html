@@ -4,53 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Sala de clase</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="css/estilos_cita.css">
     <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
- <header>
-        <div class="alert alert-primary text-center" role="alert">
-            Recuerda que en Tus clases también puedes encontrar <a href="profesores.html"></a>
-            <a href="">profesores online</a>
-          </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a class="navbar-brand" href="#">Profe 2.0</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Buscar
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Dar Clases particulares</button>
-                    </form>
-                </div>
+ 
+   <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Mentoring</h1>
             </div>
-        </nav>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">9999999</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-map-marker">adsasdasdasda-aqui</span>
+                </p>
+            </div>
+        </div>
     </header>
+    <nav class="main-nav top-header">
+        <div class="container container--flex">
+            <span class="icon-list" id="btn-menu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/index.html" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="/Inicio.html" class="menu__link">Clases</a></li>
+                <li class="menu__item"><a href="losmejores.html" class="menu__link">Profesores</a></li>
+                <li class="menu__item"><a href="historico_alumno.html" class="menu__link">Mi Historial</a></li>
+                <li class="menu__item"><a href="#" class="menu__link menu__link--select ">Sala</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+    
+<div class="container container-chat">
     <div class="opcion-chat">
-      <div class="float-right">
+      <div class="opc-chat">
        <a href="#"> <span class="icon-exclamation-circle"></span> Denunciar</a>
        
         <a href="index.html"><span class="icon-logout"></span>Salir</a>
@@ -76,7 +74,7 @@
     </li>
       
       <li class="self">
-        <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="avatar"><img src="" draggable="false"/></div>
       <div class="msg">
         <p>Puff...</p>
         <p>Aún estoy haciendo el contexto de Góngora... <emoji class="books"/></p>
@@ -87,16 +85,30 @@
        
     <input class="textarea" type="text" placeholder="&#9993 Type here!"/><div class="emojis"></div></ol>
     </div>
-    
-    <div class="bg-f">
-  <footer class="footer mt-auto py-3">
-    <div class="container-fluid">
-      <div class="row">
-      <span class="col-12 text-center"><a href="index.html">Mentoring</a> | Todo los derechos reservados 2020 ©</span>
     </div>
-  </div>
-  </footer>
-</div>
+    <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column-33">
+                    <h2 class="column__title">por que?</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium amet omnis deleniti minus </p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Contactanos</h2>
+                    <p class="column__txt">dato1</p>
+                    <p class="column__txt">dato2</p>
+                    <p class="column__txt">dato3</p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Siguenos en nuestras redes</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-twitter">Siguenos en twitter</a></p>
+                    <p class="column__txt"><a href="" class="icon-youtube">Visita nuestro canal!</a></p>
+                </div>
+                <p class="copy">copyrgith dasdsa das das</p>
+            </div>
+        </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

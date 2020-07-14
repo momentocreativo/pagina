@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos_perfil.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Mentoring</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">9999999</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-map-marker">adsasdasdasda-aqui</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav top-header">
+        <div class="container container--flex">
+            <span class="icon-list" id="btn-menu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/index.html" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="/Inicio.html" class="menu__link">Clases</a></li>
+                <li class="menu__item"><a href="losmejores.html" class="menu__link">Profesores</a></li>
+                <li class="menu__item"><a href="historico_alumno.html" class="menu__link">Mi Historial</a></li>
+                <li class="menu__item"><a href="/usuario.html" class="menu__link menu__link--select ">Perfil</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container">
+
+            <div class="cont-subu">
+                <p>Menú</p>
+                <li class="tex-menu">
+
+                    <ul>
+                        <li> <a class="opc-menu-sub" href="/usuario.html">Perfíl</a></li>
+                        <li> <a class="opc-menu-sub" href="/Inicio.html">Clases</a></li>
+                        <li> <a class="opc-menu-sub" href="/historico_alumno.html">Mi Historial</a></li>
+                        <li> <a class="opc-menu-sub" href="/index.html">Cerrar sesiòn</a></li>
+                    </ul>
+                </li>
+            </div>
+
+
+            <!---------------------------- Vista Información ------------------------>
+            <div id="vista-info">
+                <div class="premios">
+
+                    <div class="">
+                        <span class="icon-exclamation-circle"></span><span>Nuevas clases de: </span>
+                        <a href="#" class="link-citas">Programacion </a>
+                        <a href="#" class="link-citas">Matematicas </a>
+                        <a href="#" class="link-citas">Quimica</a>
+                    </div>
+                    <div class="">
+                        <p class="mb-1">Perfil: Verificado <span class="icon-check-circle"></span></p>
+                    </div>
+
+                    <div class="">
+                        <p class="mb-1">Premios Conseguidos: BEST-FAME <span class="icon-trophy"></span></p>
+
+                    </div>
+
+                </div>
+                <form id="actualizacion" action="" method="post" enctype="multipart/form-data" class="modal-content form-usu">
+
+                    <center>
+                        <h2 class="log-2" style="color:black"><br>Información Personal..</h2>
+                    </center>
+                    <center>
+                        <div class="cont-Img img-pro imagen-user">
+                            <div id="prevProd">
+                                <img id="aux-img" src="/imagenes/perfiles/chica.jpg" alt='Portada' class="img_pro">
+                            </div>
+                            <a href="#">[Edit]</a>
+
+                        </div>
+                    </center>
+                    <p><br>Bienvenido <b>Maria</b> , te invitamos a mantener actualizada tu información personal, es de suma importancia para nosotros, así podemos ofrecerte un mejor servicio.</p>
+
+                    <div class="contenedor-inputs">
+                        <div>
+                            <label for="nombre" class="l-i">Nombre: </label>
+                            <label class="info-dere" for="apellido">Apellido: </label>
+                        </div>
+
+                        <input type="text" name="nombre" id="nombre2" value="Maria" class="input-48 input-txt" required>
+
+                        <input type="text" name="apellido" id="apellido2" value="Perez" class="input-48 input-txt">
+
+                        <div>
+                            <label for="correo" class="l-i">Correo: </label>
+                            <label class="info-dere" for="telefono">Telefono: </label>
+                        </div>
+
+                        <input type="text" id="email2" name="correo" value="pedro_perez@gmail.com" class="input-48 input-txt" required title="Ingrese un E-mail valido">
+
+                        <input type="text" id="telefono2" name="telefono" value="0424-2125487" class=" input-48 input-txt" required onkeypress="return isNumberKey(this);">
+
+                        <div>
+                            <center>
+                                <h2 class="log-2" style="color:white"><br>Dirección Registrada..</h2>
+                            </center>
+                        </div>
+
+
+                        <label for="select" class="l-i">Estado: </label>
+                        <label class="info-dere" for="cbx_municipio">Ciudad: </label>
+
+                        <select name="cbx_estado" id="cbx_estado">
+                            <option value="0">Anzoategui</option>
+
+                        </select>
+
+                        <select name="cbx_municipio" id="cbx_municipio" required>
+                            <option value="0">Lecheria</option>
+                        </select>
+
+
+                        <div><label for="direccion">Dirección:</label></div>
+                        <input type="text" id="direccion2" name="direccion" value="bla bla bla" class="input-97 input-txt" maxlength="70" title="Max: 50 Caracteres">
+                        <center><input type="submit" value="Actualizar Datos" class="btn-enviar"></center>
+
+                    </div>
+                </form>
+            </div>
+             <div class="cont-submenu cont-favor">
+                <form class="form-busq" action="">
+                    <div class="mas-busc">
+                        <h4>Busca tus temas Aqui..</h4>
+                    </div>
+                    <div>
+                        <input class="input-80" type="text" placeholder='Buscar..'>
+                        <button class="buscador" type='submit'><span class='icon-search'></span></button>
+                    </div>
+
+                    <h5>Nivel de Clases:</h5>
+                    <div class="opc-nivel">
+                         <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Basico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Avanzado</option>
+                        </select>
+                    </div>
+                    
+                    <h5>Areas:</h5>
+                    <div class="opc-nivel">
+                         <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Matematica</option>
+                        <option value="2">Quimica</option>
+                        <option value="3">Fisica</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <h5>¿Donde?</h5>
+                    </div>
+                    <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Venezuela</option>
+                        </select>
+                    </div>
+                    
+                
+                    <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Estado</option>
+                        <option value="1">Anzoategui</option>
+                        </select>
+                    </div>
+                    
+                     <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Ciudad</option>
+                        <option value="1">Barcelona</option>
+                        <option value="1">Lecheria</option>
+                        <option value="1">Puerto la Cruz</option>
+                        </select>
+                    </div>
+                    
+                     <div>
+                        <h5>¿Metodo?</h5>
+                    </div>
+                    <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">On-line</option>
+                         <option value="1">Presencial</option>
+                        </select>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column-33">
+                    <h2 class="column__title">por que?</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium amet omnis deleniti minus </p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Contactanos</h2>
+                    <p class="column__txt">dato1</p>
+                    <p class="column__txt">dato2</p>
+                    <p class="column__txt">dato3</p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Siguenos en nuestras redes</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-twitter">Siguenos en twitter</a></p>
+                    <p class="column__txt"><a href="" class="icon-youtube">Visita nuestro canal!</a></p>
+                </div>
+                <p class="copy">copyrgith dasdsa das das</p>
+            </div>
+        </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

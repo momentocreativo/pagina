@@ -3,92 +3,125 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cita</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos_log.css">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/estilos_index.css">
     <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/estilos_cita.css">
+    <link rel="stylesheet" href="css/estilos_pago.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="alert alert-primary text-center" role="alert">
-            Recuerda que en Tus clases también puedes encontrar <a href="profesores.html"></a>
-            <a href="">profesores online</a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html">Profe 2.0</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Buscar
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Dar Clases particulares</button>
-                    </form>
-                </div>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Mentoring</h1>
             </div>
-        </nav>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">9999999</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span class="icon-map-marker">adsasdasdasda-aqui</span>
+                </p>
+            </div>
+        </div>
     </header>
+    <nav class="main-nav top-header">
+        <div class="container container--flex">
+            <span class="icon-list" id="btn-menu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/index.html" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="/Inicio.html" class="menu__link">Clases</a></li>
+                <li class="menu__item"><a href="losmejores.html" class="menu__link">Profesores</a></li>
+                <li class="menu__item"><a href="historico_alumno.html" class="menu__link">Mi Historial</a></li>
+                <li class="menu__item"><a href="/usuario.html" class="menu__link">Perfil</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
 
-    <section>
+
+    <section style="margin-bottom: 20px;">
         <div class="container">
             <div class="cont-submenu">
                 <form class="form-busq" action="">
-                    <div class="mas-busc">
-                        <p>Busca Tu Clase Aquí...</p>
+                    <div class="">
+                        <h4>Busca tus temas Aqui..</h4>
                     </div>
-                    <p class="title-menu-s">Que Quieres Aprender?</p>
                     <div>
-                        <input class="input-97" type="text" placeholder='Buscar..'>
+                        <input class="input-80" type="text" placeholder='Buscar..'>
                         <button class="buscador" type='submit'><span class='icon-search'></span></button>
-                    </div>
-                    <div>
-                        <span>¿Donde?</span>
-                    </div>
-                    <div class="opc-nivel">
-                        <input type="checkbox"><label>Online</label>
-                    </div>
-                    <div class="opc-nivel">
-                        <input type="checkbox"><label>Hogar</label>
                     </div>
 
                     <h5>Nivel de Clases:</h5>
                     <div class="opc-nivel">
-                        <input type="checkbox"><label>Iniciación</label>
+                         <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Basico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Avanzado</option>
+                        </select>
+                    </div>
+                    
+                    <h5>Areas:</h5>
+                    <div class="opc-nivel">
+                         <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Matematica</option>
+                        <option value="2">Quimica</option>
+                        <option value="3">Fisica</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <h5>¿Donde?</h5>
                     </div>
                     <div class="opc-nivel">
-                        <input type="checkbox"><label>Bajo</label>
+                        <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">Venezuela</option>
+                        </select>
+                    </div>
+                    
+                
+                    <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Estado</option>
+                        <option value="1">Anzoategui</option>
+                        </select>
+                    </div>
+                    
+                     <div class="opc-nivel">
+                        <select name=" " required>
+                        <option value="0">Ciudad</option>
+                        <option value="1">Barcelona</option>
+                        <option value="1">Lecheria</option>
+                        <option value="1">Puerto la Cruz</option>
+                        </select>
+                    </div>
+                    
+                     <div>
+                        <h5>¿Metodo?</h5>
                     </div>
                     <div class="opc-nivel">
-                        <input type="checkbox"><label>Medio</label>
-                    </div>
-                    <div class="opc-nivel">
-                        <input type="checkbox"><label>Alto</label>
+                        <select name=" " required>
+                        <option value="0">Seleccione</option>
+                        <option value="1">On-line</option>
+                         <option value="1">Presencial</option>
+                        </select>
                     </div>
 
                 </form>
             </div>
 
-            <div class="cont-clases shadow p-3 mb-5 bg-white rounded">
-                <div class="d-flex w-100 justify-content-between title-perfil">
+            <div class="cont-clases">
+                <div class="title-perfil">
                     <p>Clases Online</p>
                     <span class="icon-map-marker"></span>
                 </div>
@@ -97,22 +130,22 @@
                         <img src="/imagenes/perfiles/Andres-6773_-500x500.jpg" alt="">
 
                     </div>
-                    <div class="d-flex justify-content-between cont-c-info">
+                    <div class="w-100">
                         <p class="mb-1">Nombre: Pedro Perez</p>
 
                     </div>
 
-                    <div class="d-flex cont-c-info justify-content-between">
+                    <div class="w-100">
 
                         <p class="mb-1">Area de Curso: Programación</p>
                     </div>
 
-                    <div class="d-flex cont-c-info justify-content-between ">
+                    <div class="w-100">
                         <p class="mb-1">Grado Academico: Ingeniero de Sistemas.</p>
                     </div>
 
-                    <div class="d-flex w-100 justify-content-between ">
-                        <p class="mb-1 intro-p"><b>Perfíl: </b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iste explicabo molestiae quae animi veritatis, dignissimos laboriosam consectetur sit neque nostrum, mollitia eligendi fuga temporibus deleniti iusto. Voluptates culpa, tenetur.</p>
+                    <div class=" w-100">
+                        <p class="mb-1 intro-p"><br><b>Perfíl: </b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iste explicabo molestiae quae animi veritatis, dignissimos laboriosam consectetur sit neque nostrum, mollitia eligendi fuga temporibus deleniti iusto. Voluptates culpa, tenetur.</p>
                     </div>
 
                     <div class="d-flex w-100 justify-content-between ">
@@ -134,15 +167,15 @@
                             <b>Disponibilidad horaria de Pedro Perez: </b></p>
                     </div>
 
-                    <div class="d-flex w-100 justify-content-between">
+                    <div class=" w-100">
                         <img src="/imagenes/perfiles/horario.png" alt="">
                     </div>
-                    <div class="d-flex w-100 justify-content-between ">
+                    <div class="w-100">
 
 
                         <button type="submit" class="btn-enviar" onclick='mostrar();'>Tomar Clase</button>
 
-                        <a href="Inicio.html" class="btn-enviar btn-atras">Atras</a>
+                        <a href="Inicio.html" class="btn-cancel">Atras</a>
                     </div>
                 </div>
 
@@ -182,7 +215,7 @@
                 <div class="d-flex w-100 justify-content-between ">
                     <a href="sala.html" class="btn-enviar btn-atras">Pagar</a>
 
-                    <button type="button" class="btn-enviar" onclick="cerrar();">Cancelar</button>
+                    <button type="button" class="btn-enviar" style="margin-left: 35%;"onclick="cerrar();">Cancelar</button>
                 </div>
             </div>
 
@@ -191,16 +224,29 @@
 
     </div>
 
-    <div class="bg-f">
-        <footer class="footer mt-auto py-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <span class="col-12 text-center"><a href="index.html">Mentoring</a> | Todo los derechos reservados 2020 ©</span>
+    <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column-33">
+                    <h2 class="column__title">por que?</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium amet omnis deleniti minus </p>
                 </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Contactanos</h2>
+                    <p class="column__txt">dato1</p>
+                    <p class="column__txt">dato2</p>
+                    <p class="column__txt">dato3</p>
+                </div>
+                <div class="column column-33">
+                    <h2 class="column__title">Siguenos en nuestras redes</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-twitter">Siguenos en twitter</a></p>
+                    <p class="column__txt"><a href="" class="icon-youtube">Visita nuestro canal!</a></p>
+                </div>
+                <p class="copy">copyrgith dasdsa das das</p>
             </div>
         </footer>
-    </div>
-    <script src="js/slider2&Login.js"></script>
+        <script src="js/slider2&Login.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

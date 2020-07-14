@@ -1,4 +1,11 @@
 
+.main-header{
+   background: linear-gradient(to right, blue, white);
+}
+.main-header__contactInfo__phone, .main-header__contactInfo__address{
+    color: black;
+}
+
 .input-97, .input-100{
     width: 97%;
     padding: 6px 6px;
@@ -9,31 +16,17 @@
     background-color:white;
     color: black;
     border-radius:3px;
+     -webkit-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
 }
-/*-----------Contenedor de formulario en : Nuevo Producto----------------*/
 .contenedor-inputs{
     margin-left: 10px;
     
 }
 
-
-
-/* --------------.modal=login, contenedor=nuevoproducto --------------*/
-
-
-.contac-label{
-   width: 25%; 
-   display: inline-block;
-   margin: 8px 0;
-   margin-right:2%;
-   box-sizing: border-box;
-   margin-right:2%;
-   color: white;
-   font-size: 15px;
-}
-
-.modal .input-48, .contenedor-inputs .input-48, .contedor-inputs select{
-    width: 47%;
+.modal .input-48, .contenedor-inputs .input-48{
+    width: 97%;
     padding: 6px 6px;
     margin-bottom: 12px;
     display: inline-block;
@@ -42,7 +35,30 @@
     background-color:white;
     margin-right:2%;
     border-radius:3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
 }
+
+.modal select{
+    width: 97%;
+    padding: 7px 7px;
+    margin: 8px 0;
+    margin-bottom: 8px;
+    display: inline-block;
+    border:1px solid black;
+    box-sizing: border-box;
+    background-color:white;
+    color: black;
+    margin-right:2%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight:bold;
+     -webkit-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+    box-shadow: 0px 0px 5px rgba(74, 74, 74, 0.75);
+}
+
 
 
 /*--------------botton buscar index-search---------*/
@@ -64,28 +80,9 @@
     font-style: italic;
 }
 /* --------------BOBOTES LOGIN Y NUEVO PRODUCTO--------------*/
-.modal button, .btn-enviar , .btn-cancel{
-    background-color:#333;
-    color: white;
-    padding: 10px 20px;
-    margin: 8px 0;
-    border-bottom:none;
-    border-left:none;
-    border-right:none;
-    cursor: pointer;
-    width: 40%;
-    border-top-color: #555;
-    right: 5px;
-    opacity: 0.8;
-}
 
 
-.modal button:hover, .btn-enviar:hover, .btn-cancel:hover{
-    border-top-color:#F8F42B;
-    opacity: 1;
-}
-
-.modal button:active, .btn-enviar:active, ..btn-cancel:active{
+.modal button:active, .btn-enviar:active, .btn-cancel:active{
     transform: scale(0.9);
 }
 
@@ -111,111 +108,34 @@ span.psw{
 .modal{
     width: 100%;
 }
-
+.modal .logo{
+    font-size: 40px;
+    color: #DE423A;
+}
 .modal-content{
     background-color: white;
     margin: 5% auto 15% auto;
-    border: 1px solid #888;
     width: 80%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: blue;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
-    -moz-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
-    box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+     -webkit-box-shadow: 0px 0px 20px rgba(74, 74, 74, 0.90);
+    -moz-box-shadow: 0px 0px 20px rgba(74, 74, 74, 0.90);
+    box-shadow: 0px 0px 20px rgba(74, 74, 74, 0.90);
     border-radius: 10px;
 }
 
 
- .modal select{
-    width: 47%;
-    padding: 7px 7px;
-    margin: 8px 0;
-    margin-bottom: 8px;
-    display: inline-block;
-    border:1px solid black;
-    box-sizing: border-box;
-    background-color:white;
-    color: black;
-    margin-right:2%;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight:bold;
-}
-
-.info-dere{
-        margin-left: 25%;
-    }
-   .form-1{
-    width: 97%; 
-    height:220px;
-    resize: none;
-}
-
-
-@media screen and(max-width:300px){
-    span.psw{
-        display: block;
-        float: none;
-    }
-    .btn-cancel{
-        width: 100%;
-    }
-    .form-1{
-    width: 97%; 
-    height:220px;
-    resize: none;
-}
-  
-}
-.rsp-login{
-    width: 100%;
-    height: 40px;
-}
-@media screen and (min-width:400px){
-    .modal-content{
-            width: 60%;
-        }
-    .contac-label{
-   width: 20%; 
-   margin: 8px 0;
-   margin-right:2%;
-   margin-right:2%;
-   font-size: 16px;
-}
-}
-  @media screen and (min-width:768px){
-        .modal-content{
-            width: 70%;
-        }
-      
-    }
-  @media screen and (min-width:1024px){
-        .modal-content{
-            width: 80%;
-        }
-     
-      .modal .btn-registro{
-       margin-left:19%;
-}
-      
-      .form-1{
-    width: 97%; 
-    height:220px;
-    resize: none;
-}
-
-    }
-
-
-
-/* ESTILOS LISTA DE PRODUCTOS*/
-.main__about__description .column:nth-child(2){
+.btn-enviar {
+     align-content: block;
+    text-align: center;
+    text-decoration: none;
+    width: 30%;
+    background:#DE423A;
+    color: white;
     padding: 10px;
+    margin: 10px auto;
+    
 }
 
-.producto{
+.cont-Img{
 	width: 200px;
 	height: 200px;
 	height: auto;
@@ -236,7 +156,7 @@ span.psw{
    
 }
 
-.producto img{
+.cont-Img img{
 	width: 100%;
 	margin:0 auto;
 	-webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
@@ -245,5 +165,57 @@ span.psw{
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 }
+@media screen and(max-width:300px){
+    span.psw{
+        display: block;
+        float: none;
+    }
+}
+@media screen and (min-width:400px){
+    .modal-content{
+            width: 60%;
+        }
+    .contac-label{
+   width: 20%; 
+   margin: 8px 0;
+   margin-right:2%;
+   margin-right:2%;
+   font-size: 16px;
+}
+}
+  @media screen and (min-width:768px){
+        .modal-content{
+            width: 70%;
+        }
+      .modal .input-48, .contenedor-inputs .input-48{
+          width: 47%;
+      }
+      .modal select{
+           width: 47%;
+      }
+      
+    }
+  @media screen and (min-width:1024px){
+        .modal-content{
+            width: 80%;
+        }
+     
+      .modal .btn-registro{
+       margin-left:19%;
+}  
+      .form-1{
+    width: 97%; 
+    height:220px;
+    resize: none;
+}
+
+    }
+
+/* ESTILOS LISTA DE PRODUCTOS*/
+.main__about__description .column:nth-child(2){
+    padding: 10px;
+}
+
+
 
 
