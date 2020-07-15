@@ -108,10 +108,24 @@ h1,h2,h3,h4,h5,h6{
     background: white;
     border-radius: 50%;
 }
+
 .social-icon__link{
     text-decoration: none;
 }
+.icon-facebook:hover{
+    background: #004ADF;
+    color: white;
+}
 
+.icon-youtube-play:hover{
+    background: #F20007;
+    color: white;
+}
+
+.icon-twitter:hover{
+   background: #00CCFF;
+    color: white; 
+}
 .menu{
     position: absolute;
     top: 60px;
@@ -135,6 +149,7 @@ h1,h2,h3,h4,h5,h6{
 .menu__link:hover{
     background: #DE423A;
 }
+
 .menu__link--select{
     background: #DE423A;
 }
