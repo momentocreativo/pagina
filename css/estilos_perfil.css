@@ -124,8 +124,8 @@
 }
 
 .form-usu, .premios{
-    width: 68%;
-    margin-left: 28%;
+    width: 99%;
+    margin: auto;
 }
 .cont-subu{
     width: 27%;
@@ -135,10 +135,17 @@
     text-align: center;
     margin-top: 20px;
     margin-left: 5px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+    -moz-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+    box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+    border-radius: 10px;
+    display: none;
 }
 
 section{
     margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 p, .link-citas{
@@ -203,13 +210,7 @@ p, .link-citas{
 .cont-subu li ul li{
     list-style: none;
 }
-.cont-subu{
-    background: white;
-    -webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
-    -moz-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
-    box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
-    border-radius: 10px;
-}
+
 
 .imagen-user img{
     border-radius: 50%;
@@ -225,7 +226,9 @@ p, .link-citas{
     margin-top: -450px;
 }
 /*--------------------------------------------TABLAS de Historia ------------------ */
-
+#horario-Agosto{
+    display: none;
+}
 table{
   width:98%;
   table-layout: fixed;
@@ -271,7 +274,18 @@ td{
 .verde{
     background: green;
 }
-
+.verde a, .rojo a{
+    color: white;
+    text-decoration: none;
+}
+.blanco-p a{
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    padding: 4px 3px;
+    background: white;
+    border-radius: 4px;
+}
 .rojo{
     background: red;
 }
@@ -286,7 +300,20 @@ td{
     overflow: scroll;
 }
 
-
+.siguiente{
+    width: 100%;
+     margin-left: 40%;
+    margin-right: auto;
+ 
+}
+.siguiente .btn-ff{
+    font-size: 15px;
+    padding: 6px;
+}
+.btn-ff span{
+    padding: 3px;
+    font-size: 15px;
+}
 /* --------------------------------------Estilos Del submenu-----------------------*/
 .cont-submenu {
     display: none;
@@ -339,11 +366,21 @@ td{
     margin-top: 20px;
     margin-left: 5px;
 }
-    .form-usu, .premios{
+  
+    .rojo a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:600px){
+  .cont-subu{
+      display: block;
+}
+      .form-usu, .premios{
     width: 70%;
     margin-left: 29%;
-} 
 }
+    }
 @media screen and (min-width:768px){
     .cont-subu{
     width: 27%;
@@ -365,6 +402,9 @@ td{
 } 
     .cont-favor2{
         margin-top: -480px;
+    }
+ .rojo a{
+        font-size: 10px;
     }
 }
 @media screen and (min-width:1024px){
@@ -389,5 +429,8 @@ td{
     width: 70%;
     margin-left: 29%;
 }
+	.rojo a{
+        font-size: 12px;
+    }
 
 }
