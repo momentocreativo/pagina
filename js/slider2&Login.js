@@ -54,6 +54,25 @@ $(document).ready(function(){
 		    }
 		});
 	});
+	
+	  $(".blanco-p").click(function(){
+            $.confirm({
+				title: 'Quiere registrar una clase para este dia?',
+				content: 'Se Registrara la cita para la fecha : ???',
+				confirmButtonClass: 'btn-enviar',
+    			cancelButtonClass: 'btn-enviar',
+    			confirmButton: 'Confirmar',
+    			cancelButton: 'Cancelar',
+				confirm: function(){
+                    $.post('',{
+                    
+                },function(e){
+                    location.href=" ";
+                        
+            });
+		    }
+		});
+	});
     
     $(".btn-cita-ocupada").click(function(){
             $.confirm({
