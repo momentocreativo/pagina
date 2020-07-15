@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/estilos_index.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/estilos_perfil.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
             <div class="social-icon">
                 <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
                 <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
-                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-youtube-play"></span></a>
             </div>
         </div>
     </nav> 
@@ -62,97 +64,363 @@
                 <div class="premios">
 
                     <div class="">
-                        <a href="#" class="link-citas">Tienes Citas <span class="icon-exclamation-circle"></span></a>
+                        <a href="#" class="link-citas">Tienes 3 nuevas Citas <span class="icon-exclamation-circle"></span></a>
+                        
+                        <p class=""><span class="icon-clock-o"></span><b> 00:10:00</b> para tu proxima clase <a href="/sala.html" class="">Ir a sala</a></p>
+                        
+                        <p class=""><span class="icon-clock-o"></span><b> 00:30:00</b> para tu proxima clase <a href="/sala.html" class="">Ir a sala</a></p>
+                        
                     </div>
                     <div class="">
                         <p class="mb-1">Perfil: Verificado <span class="icon-check-circle"></span></p>
                     </div>
 
                     <div class="">
-                        <p class="mb-1">Premios Conseguidos: BEST-FAME <span class="icon-trophy"></span></p>
-
+                        <p class="mb-1">Premios Conseguidos: BEST-FAME <span class="icon-trophy">
+                            
+                        </span></p>
+                          
                     </div>
 
                 </div>
                 <div class="modal-content form-usu">
                     
+                    <div class="animate">
+                   <div id="horario-julio">
                     <table>
                         <caption>
-                            <h2>Disponibilidad</h2>
+                            <h2>Horario de Clases</h2>
+                            <h4>Julio</h4>
                         </caption>
                         <thead class="f-white">
                             <th>Horas</th>
-                            <th>Lunes</th>
-                            <th>Martes</th>
-                            <th>Miercoles</th>
-                            <th>Jueves</th>
-                            <th>Viernes</th>
-                            <th>Sabado</th>
-                            <th>Domingo</th>
+                            <th>Lun. 13</th>
+                            <th>Mar. 14</th>
+                            <th>Mie. 15</th>
+                            <th>Jue. 16</th>
+                            <th>Vie. 17</th>
+                            <th>Sab. 18</th>
+                            <th>Dom. 19</th>
                         </thead>
                         <tbody>
                             <tr>
                                 <th>07:00</th>
-                                <td class="verde"><a href="cita.html">Agendar</a></td><td class="verde"><a href="cita.html">Agendar</a></td><td class="rojo"></td><td class="verde"><a href="cita.html">Agendar</a></td><td class="verde"><a href="cita.html">Agendar</a></td><td class="rojo"></td><td class="rojo"></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="blanco-p"><a href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>08:00</th>
-                                <td class="rojo"></td><td class="verde"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="verde"><a href="#">Libre</a></td>
+                                <td class="blanco-p"><a href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>09:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>10:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>11:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>12:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>13:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>14:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                               <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>15:00</th>
-                                <td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a  href="#">Reservada</a></td>
+                                <td class="rojo"><a href="#">Reservada</a></td>
+                                <td class="rojo"><a href="#">Reservada</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>16:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>17:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                               <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>18:00</th>
-                                <td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td><td class="rojo"></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>19:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                             <tr>
                                 <th>20:00</th>
-                                <td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td><td class="verde"></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                     </div>
+               
+                        <div id="horario-Agosto">
+                    <table >
+                         <caption>
+                            <h2>Horario de Clases</h2>
+                            <h4>Julio</h4>
+                        </caption>
+                        <thead class="f-white">
+                            <th>Horas</th>
+                            <th>Lun. 20</th>
+                            <th>Mar. 21</th>
+                            <th>Mier. 22</th>
+                            <th>Jue. 23</th>
+                            <th>Vie. 24</th>
+                            <th>Sab. 25</th>
+                            <th>Dom. 26</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>07:00</th>
+                               <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>08:00</th>
+                               <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>09:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>10:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>11:00</th>
+                               <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                             <tr>
+                                <th>12:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>13:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>14:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>15:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>16:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>17:00</th>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="verde"><a  href="#">Libre</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>18:00</th>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>19:00</th>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                            </tr>
+                            <tr>
+                                <th>20:00</th>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
+                                <td class="blanco-p"><a  href="#">Agendar</a></td>
                             </tr>
                         </tbody>
                         <tfoot>
-
+                           
                         </tfoot>
+                       
                     </table>
+                    </div>
+                    <div class="siguiente">
+                      
+                      <button type="button" class="btn-ff"  onclick="atras();"><span>&lt;</span>Atras</button>
+                      <button type="button" class="btn-ff"  onclick="alante();">Siguiente<span>&gt;</span></button>
+                   
+                    </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -179,6 +447,7 @@
             </div>
         </footer>
     <script src="js/script.js"></script>
+    <script src="js/slider2&Login.js"></script>
 
 </body>
 
