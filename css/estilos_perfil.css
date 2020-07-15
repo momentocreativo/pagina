@@ -133,7 +133,7 @@
     float:left;
     list-style: none;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 6px;
     margin-left: 5px;
     background: white;
     -webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
@@ -193,6 +193,7 @@ p, .link-citas{
     -moz-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
     box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
     border-radius: 10px;
+    margin-top:6px;
 }
 .premios .icon-check-circle{
     font-size: 20px;
@@ -405,7 +406,7 @@ td{
     }
 	
     .cont-favor2{
-        margin-top: -380px;
+          margin-top: -470px;
     }
  .rojo a{
         font-size: 10px;
@@ -427,7 +428,7 @@ td{
     margin-left: 0.5%;
 }
 .cont-favor2{
-        margin-top: -400px;
+        margin-top: -480px;
     }
   .cont-favor{
         margin-top: -730px;
