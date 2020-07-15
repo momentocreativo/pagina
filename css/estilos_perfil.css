@@ -400,6 +400,10 @@ td{
     width: 70%;
     margin-left: 29%;
 } 
+	.cont-favor{
+        margin-top: -640px;
+    }
+	
     .cont-favor2{
         margin-top: -480px;
     }
@@ -424,6 +428,9 @@ td{
 }
 .cont-favor2{
         margin-top: -540px;
+    }
+	 .cont-favor{
+        margin-top: -640px;
     }
 .form-usu, .premios{
     width: 70%;
