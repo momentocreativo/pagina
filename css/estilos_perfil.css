@@ -215,7 +215,9 @@ p, .link-citas{
     list-style: none;
 }
 
-
+.container{
+	overflow:hidden;
+	}
 .imagen-user img{
     border-radius: 50%;
 }
