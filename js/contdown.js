@@ -30,5 +30,5 @@ const countdown = (deadline, elem, finalMessage)=>{
     },1000)
 };
 
-countdown ('Thu Jul 17 2020 13:16:27 GMT-0400','crono','Ingresa a la cita');
-countdown ('Thu Jul 19 2020 13:16:27 GMT-0400','crono2','Ingresa a la cita');
+countdown ('Thu Jul 30 2020 13:16:27 GMT-0400','crono','Ingresa a la cita');
+countdown ('Thu Jul 31 2020 13:16:27 GMT-0400','crono2','Ingresa a la cita');
